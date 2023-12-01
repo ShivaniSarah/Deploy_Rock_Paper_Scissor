@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <div id="home_screen">
+            <center>
+                  <div class="banner">
+
+                        <div class="banner_left">
+                              <div>ROCK</div>
+                              <div>PAPER</div>
+                              <div>SCISSORS</div>
+                        </div>
+                        <div class="banner_right">
+                              <div class="scores">
+                                    <div class="score_name">
+                                          <div>COMPUTER</div>
+                                          <div>SCORE</div>
+                                    </div>
+                                    <div class="score pc_score">
+                                          0
+                                    </div>
+                              </div>
+                              <div class="scores">
+                                    <div class="score_name">
+                                          <div>YOUR</div>
+                                          <div>SCORE</div>
+                                    </div>
+                                    <div class="score user_score">
+                                          0
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </center>
+            <center>
+
+                  <div id="play">
+                        <div class="top_play">
+                              <div class="rock"><img id="rock" src="assets/rock.svg" height="100px" width="100px" alt=""></div>
+                              <img id="line_1" id="line1" src="assets/Line 1.svg" alt="">
+                              <div id="scissor_div">
+                                    <div class="scissor" ><img id="scissor" src="assets/scissor.svg" height="80px" width="80px" alt=""></div>
+                              </div>
+                        </div>
+                        <div class="mid_play">
+
+                              <img src="assets/Line 3.svg" alt="">
+                              <img src="assets/Line 2.svg" alt="">
+                        </div>
+
+                        <div class="last_play">
+                              <div class="paper"><img id="paper" src="assets/paper.svg"" height="100px" width="100px" alt=""></div>
+                        </div>
+                        
+                  </div>
+
+            </center>
+                              <div class=" game_rules" style="display:none;">
+                                    <center>
+                                          <div>Game rules</div>
+                                    </center>
+                                    <ul type="square">
+                                          <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                                          <li>Agree ahead of time whether you’ll count off “rock, paper, scissors,
+                                                shoot” or just “rock, paper, scissors.”</li>
+                                          <li>Use rock, paper, scissors to settle minor decisions or simply play to pass
+                                                the time</li>
+                                          <li>If both players lay down the same hand, each player lays down another hand
+                                          </li>
+                                    </ul>
+
+                              </div>
+                              <button class="rules open_rules">RULES</button>
+                              <!-- <div id="cancel" style="display:none;"><div style="margin-top:7px">X</div></div> -->
+                              <div class="cancel" style="display:none">X</div>
+
+                        </div>
+
+
+                        <div id="hurray_screen">
+
+
+                              <div id="mid_hurray">
+                                    <div id="hurray"><img src="assets/Vector.png" alt=""></div>
+                                    <div id="hurray_text">HURRAY!!</div>
+                                    <div id="you_won_text">YOU WON THE GAME</div>
+                                    <button id="play_again_text" class="replay">PLAY AGAIN</button>
+                              </div>
+                              <div class=" game_rules" style="display:none;">
+                                    <center>
+                                          <div>Game rules</div>
+                                    </center>
+                                    <ul type="square">
+                                          <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                                          <li>Agree ahead of time whether you’ll count off “rock, paper, scissors,
+                                                shoot” or just “rock, paper, scissors.”</li>
+                                          <li>Use rock, paper, scissors to settle minor decisions or simply play to pass
+                                                the time</li>
+                                          <li>If both players lay down the same hand, each player lays down another hand
+                                          </li>
+                                    </ul>
+
+                              </div>
+                              <button class="rules open_rules">RULES</button>
+                              <!-- <div id="cancel" style="display:none;"><div style="margin-top:7px">X</div></div> -->
+                              <div class="cancel" style="display:none;">X</div>
+
+                              <!-- <button class="rules open_rules">RULES</button> -->
+
+
+                        </div>
+
+
+
+                        <div id="you_win_screen">
+
+                              <center>
+                                    <div class="banner">
+
+                                          <div class="banner_left">
+                                                <div>ROCK</div>
+                                                <div>PAPER</div>
+                                                <div>SCISSORS</div>
+                                          </div>
+                                          <div class="banner_right">
+                                                <div class="scores">
+                                                      <div class="score_name">
+                                                            <div>COMPUTER</div>
+                                                            <div>SCORE</div>
+                                                      </div>
+                                                      <div class="score pc_score">
+                                                            
+                                                      </div>
+                                                </div>
+                                                <div class="scores">
+                                                      <div class="score_name">
+                                                            <div>YOUR</div>
+                                                            <div>SCORE</div>
+                                                      </div>
+                                                      <div class="score user_score">
+                                                            
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </center>
+
+                              <div class="pick">
+                                    <div style="color:white">YOU PICKED</div>
+                                    <div style="color:white">PC PICKED</div>
+                              </div>
+                              <div class="mid_tie_up" style="margin-left:23rem">
+                                    <div>
+                                          <div id="outerdiv">
+                                                <div id="innerdiv">
+                                                      <div id="your_choice">
+                                                            <!-- <div id="scissor"><img src="assets/scissor.svg" alt="">
+                                                            </div> -->
+                                                      </div>
+
+                                                </div>
+                                          </div>
+
+
+                                    </div>
+                                    <div id="pc_choice">
+
+                                          <!-- <div id="paper"><img src="assets/paper.svg""  alt=""></div>    -->
+
+                                    </div>
+                              </div>
+            </center>
+
+
+            <div id="tie_up_replay_you_win">
+                  <div id="tie_up_text">
+                        <div>YOU WIN</div>
+                        <div id="against_pc">AGAINST PC</div>
+                  </div>
+                  <button class="replay">PLAY AGAIN</button>
+            </div>
+
+            <div class=" game_rules" style="display:none;">
+                  <center>
+                        <div>Game rules</div>
+                  </center>
+                  <ul type="square">
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors,
+                              shoot” or just “rock, paper, scissors.”</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass
+                              the time</li>
+                        <li>If both players lay down the same hand, each player lays down another hand
+                        </li>
+                  </ul>
+
+            </div>
+            <button class="next open_rules">RULES</button>
+            <!-- <div id="cancel" style="display:none;"><div style="margin-top:7px">X</div></div> -->
+            <div class="cancel" style="display:none;">X</div>
+
+            <button class="rules" id="next_btn">NEXT</button>
+
+      </div>
+
+      <div id="you_lost_screen">
+            <center>
+                  <div class="banner">
+
+                        <div class="banner_left">
+                              <div>ROCK</div>
+                              <div>PAPER</div>
+                              <div>SCISSORS</div>
+                        </div>
+                        <div class="banner_right">
+                              <div class="scores">
+                                    <div class="score_name">
+                                          <div>COMPUTER</div>
+                                          <div>SCORE</div>
+                                    </div>
+                                    <div class="score pc_score">
+                                          
+                                    </div>
+                              </div>
+                              <div class="scores">
+                                    <div class="score_name">
+                                          <div>YOUR</div>
+                                          <div>SCORE</div>
+                                    </div>
+                                    <div class="score user_score">
+                                          
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </center>
+            <center>
+
+                  <div class="pick">
+                        <div style="color:white">YOU PICKED</div>
+                        <div style="color:white">PC PICKED</div>
+                  </div>
+                  <div class="mid_tie_up">
+                        <div id="your_choice">
+
+                              <!-- <div id="paper"><img src="assets/paper.svg""  alt=""></div> -->
+
+                        </div>
+                        <div>
+
+                              <div id="outerdiv">
+                                    <div id="innerdiv">
+                                          <div id="pc_choice">
+                                                <!-- <div id="scissor"><img
+                                                                                    src="assets/scissor.svg"
+                                                                                          alt=""></div> -->
+                                          </div>
+
+                                    </div>
+                              </div>
+
+                        </div>
+                  </div>
+            </center>
+
+
+            <div id="tie_up_replay">
+                  <div id="tie_up_text">
+                        <div>YOU LOST</div>
+                        <div id="against_pc">AGAINST PC</div>
+                  </div>
+                  <button class="replay">PLAY AGAIN</button>
+            </div>
+
+            <div class=" game_rules" style="display:none;">
+                  <center>
+                        <div>Game rules</div>
+                  </center>
+                  <ul type="square">
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors,
+                              shoot” or just “rock, paper, scissors.”</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass
+                              the time</li>
+                        <li>If both players lay down the same hand, each player lays down another hand
+                        </li>
+                  </ul>
+
+            </div>
+            <button class="rules open_rules">RULES</button>
+            <!-- <div id="cancel" style="display:none;"><div style="margin-top:7px">X</div></div> -->
+            <div class="cancel" style="display:none;">X</div>
+            <!-- <button class="rules open_rules">RULES</button> -->
+
+      </div>
+      <div id="tie_up_screen">
+            <center>
+                  <div class="banner">
+
+                        <div class="banner_left">
+                              <div>ROCK</div>
+                              <div>PAPER</div>
+                              <div>SCISSORS</div>
+                        </div>
+                        <div class="banner_right">
+                              <div class="scores">
+                                    <div class="score_name">
+                                          <div>COMPUTER</div>
+                                          <div>SCORE</div>
+                                    </div>
+                                    <div class="score pc_score">
+                                          
+                                    </div>
+                              </div>
+                              <div class="scores">
+                                    <div class="score_name">
+                                          <div>YOUR</div>
+                                          <div>SCORE</div>
+                                    </div>
+                                    <div class="score user_score">
+                                          
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </center>
+            <center>
+                  <div class="mid_tie_up">
+                        <div>
+                              <div style="color:white">YOU PICKED</div>
+                              <div id="your_choice">
+                                    <!-- <div id="rock"><img src="assets/rock.svg" alt="">
+                                                                  </div> -->
+                              </div>
+                        </div>
+                        <div>
+                              <div style="color:white">PC PICKED</div>
+                              <div id="pc_choice">
+                                    <!-- <div id="rock"><img src="assets/rock.svg" alt="">
+                                                                  </div> -->
+                              </div>
+                        </div>
+                  </div>
+            </center>
+
+
+            <div id="tie_up_replay">
+                  <div id="tie_up_text">TIE UP</div>
+                  <button class="replay">REPLAY</button>
+            </div>
+            <div class=" game_rules" style="display:none;">
+                  <center>
+                        <div>Game rules</div>
+                  </center>
+                  <ul type="square">
+                        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors,
+                              shoot” or just “rock, paper, scissors.”</li>
+                        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass
+                              the time</li>
+                        <li>If both players lay down the same hand, each player lays down another hand
+                        </li>
+                  </ul>
+
+            </div>
+            <button class="rules open_rules">RULES</button>
+            <!-- <div id="cancel" style="display:none;"><div style="margin-top:7px">X</div></div> -->
+            <div class="cancel" style="display:none;">X</div>
+            <!-- <button class="rules open_rules">RULES</button> -->
+
+      </div>
+
+      <script src=" script.js"></script>
+</body>
+
+</html>
